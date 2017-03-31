@@ -5,9 +5,9 @@
   <title>Cindy Green, Software Developer</title>
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
 <meta charset="utf-8">
-<meta name = "viewport" content="width=device-width, initial-scale=1">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <script src="https://use.fontawesome.com/3e2ffaf7f7.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -15,7 +15,7 @@
   <script src="mysite.js"></script>
   </head>
 
- <div class="modal fade about-modal " id="aboutMe" tabindex="-1" role="dialog" aria-hidden="true" >
+  <div class="modal fade about-modal " id="aboutMe" tabindex="-1" role="dialog" aria-hidden="true" >
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -172,139 +172,150 @@
                     </div>
                 </div>
             </div>  
-  <body>
-                 
 
+<body id="page-top" data-spy="scroll">
+	<nav class= "navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <div class = "navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="page-top">cimigreen</a>
+            </div>
 
-<div id="myCarousel" class="carousel slide my-carousel" data-interval="false">
-  <nav class="navbar navbar-default my-nav">
-  <div class="container">
-<div class = "navbar-header">
-   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-  <a class="navbar-brand">Cindy Green</a>
-    </div>
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <div id="navbar-top">
-<ol class="navbar-nav carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active">About</li>
-      <li data-target="#myCarousel" data-slide-to="1">Code</li>
-      <li data-target="#myCarousel" data-slide-to="2">Blog</li>
-</ol>
-</div>
-<ul class="navbar-right nav socialmedia">
-  <li><a href="https://twitter.com/cimigreen" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-  <li><a href="https://github.com/cimigree" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-  <li><a href="https://linkedin.com/in/cimigreen/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-  <li><a href="mailto:cimigreen@hotmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-
-</ul>
-
-</div>
-</div>
+        <div class="collapse navbar-collapse" id="my-navbar">
+            <ul class="nav navbar-nav">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#about">About</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#code">Code</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#blog">Blog</a>
+                </li>
+                <ul class="navbar-right nav socialmedia page-scroll">
+                    <li class="page-scroll socialmedia">
+                        <a href="https://twitter.com/cimigreen" target="_blank" class="socialmedia"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                        <a href="https://github.com/cimigree" target="_blank" class="socialmedia"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                        <a href="https://linkedin.com/in/cimigreen/" target="_blank" class="socialmedia"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                        <a href="mailto:cimigreen@hotmail.com" class="socialmedia"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </div> 
 </nav>
-    <div class="carousel-inner" role="listbox">
 
-      <div class="item active" >
-        <div class="container-fluid my-container" id="about">
-          <div class="carousel-content jumbotron"> 
-              <h1> Cindy Green </h1>
-              <hr></hr>
-              <h2> Software Engineer     &&     Web Developer     &&     Mobile Developer </h2>  
-              <hr></hr>
-              <div class="flexrow">
-              <h2><a href="#aboutMe" data-toggle="modal" class="about-link">About Me</a></h3>
-                <img id="innerimage" src="CindyAcademyPhotoCropped.jpeg">
-               <h2><a href="CGreenRes.pdf" target="_blank">Resume</a></h2>
-               </div>    
-               </div>
+    <header id="about">
+        <div class="container">
+            <div id="first">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <div class="imp-info">Software Engineer && Web Developer && Mobile Developer </div>
                 </div>
                 </div>
-
-<div class="item">
-  <div class="container-fluid my-container" id="code">
-    <div class="carousel-content jumbotron">   
-      <h1 id="code-title">Code</h1>
-        <div id="code-display">
-          <div class="flexrow">
-            <div class="col col-3">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-md-7 col-xs-12">
+                                <span class="section-title">Cindy Green</span>
+                                <span><h3>Learn More <a href="#aboutMe" data-toggle="modal"><span class="about-link">About Me</span></a>
+                        or Check Out My <a href="CGreenRes.pdf" target="_blank"><span class="about-link">Resume</span></a></h3>
+                                </span>
+                            </div>
+                        <div class="col-md-5">
+                        <img class="img-responsive" id="myphoto" src="CindyAcademyPhotoCropped.jpeg" alt="Pixel Tree">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</header>
+<section id="code">
+    <div class="container">
+        <div id="second">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                 <h1 class="section-title">Code</h1>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-lg-3">
               <h4>Projects</h4>
             </div>
-            <div class="col col-3">
+            <div class="col-lg-3">
               <h4>Javascript</h4>
             </div>
-            <div class="col col-3">
+            <div class="col-lg-3">
               <h4>ASP.net C# MVC</h4>
             </div>
-            <div class="col col-3">
+            <div class="col-lg-3">
               <h4>Ruby</h4>
             </div>
           </div>
-          <div class="flexrow">
-            <div class="col col-3">
-              <a href="https://github.com/AcademyPgh/Y1S2-ReplayFX-Schedule-App" target="_blank"><img id="replay" class="img img-responsive" src="replay.png"></a>
+          <div class="row">
+              <div class="col-lg-3 code-item">
+              <a href="https://github.com/AcademyPgh/Y1S2-ReplayFX-Schedule-App" target="_blank"><img id="replay" class="img-responsive" src="replay.png"></a>
               <p>Mobile App for Replay FX <a href="#replaymobile" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
             </div>
-            <div class="col col-3">
-              <a href="https://github.com/cimigree/MemoryGame" target="_blank"><img id="memory-game" class="img img-responsive" src="memory_game.png"></a>
+            <div class="col-lg-3 code-item">
+              <a href="https://github.com/cimigree/MemoryGame" target="_blank"><img id="memory-game" class="img-responsive" src="memory_gameedit.png"></a>
               <p>Memory Game <a href="#memory" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
             </div>
-            <div class="col col-3">
-              <a href="https://github.com/AcademyPgh/Y1S2-ReplayFXSchedule.Web" target="_blank"><img id="replay-back" class="img img-responsive" src="ReplayBackEnd.png"></a>
+            <div class="col-lg-3 code-item">
+              <a href="https://github.com/AcademyPgh/Y1S2-ReplayFXSchedule.Web" target="_blank"><img id="replay-back" class="img-responsive" src="ReplayBackEndedit.png"></a>
               <p>App Back End <a href="#replay-backend" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
             </div>
-            <div class="col col-3">
-              <a href="https://github.com/cimigree/ruby_game_o_life" target="_blank"><img id="gamolife" class="img img-responsive" src="gameolife_ruby.png"></a>
+            <div class="col-lg-3 code-item">
+              <a href="https://github.com/cimigree/ruby_game_o_life" target="_blank"><img id="gamolife" class="img-responsive" src="gameolife_ruby_edit.png"></a>
               <p>Conway's Game of Life <a href="#gameolife" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
             </div>
-          </div>         
-          <div class="flexrow">
-            <div class="col col-3">
-              <a href="flexablecare.com" target="_blank"><img id="flexable" class="img img-responsive" src="flexablescreen.png"></a>
+          </div>      
+          <div class="row">
+            <div class="col-lg-3 code-item">
+              <a href="flexablecare.com" target="_blank"><img id="flexable" class="img-responsive" src="flexablescreen_edit.png"></a>
               <p>Flexable<a href="#flexablecare" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
             </div>
-            <div class="col col-3">
-              <a href="https://github.com/cimigree/image-filter" target="_blank"><img id="imageFilter" class="img img-responsive" src="image-filters-img.png"></a>
+            <div class="col-lg-3 code-item">
+              <a href="https://github.com/cimigree/image-filter" target="_blank"><img id="imageFilter" class="img-responsive" src="image-filters-edit.png"></a>
               <p>Image Filter <a href="#image-filter" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
             </div>
-            <div class="col col-3">
-              <a href="https://github.com/cimigree/Trillo" target="_blank"><img id="trillo" class="img img-responsive" src=""></a>
+            <div class="col-lg-3 code-item">
+              <a href="https://github.com/cimigree/Trillo" target="_blank"><img id="trillo" class="img-responsive" src=""></a>
               <p>Version of Trello <a href="#trillo-mvc" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
             </div>
-             <div class="col col-3">
-              <a href="https://github.com/cimigree/ruby_mad_libs" target="_blank"><img id="mad-libs" class="img img-responsive" src="RubyMadLibs.png"></a>
+             <div class="col-lg-3 code-item">
+              <a href="https://github.com/cimigree/ruby_mad_libs" target="_blank"><img id="mad-libs" class="img-responsive" src="RubyMadLibsEdit.png"></a>
               <p>Mad Lib <a href="#madlib" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-       <div class="item">      
-          <div class="container-fluid my-container" id="blog">
-             <div class="carousel-content jumbotron"> 
-              <h1>Blog</h1>
-                <p> 
-                Stay tuned for The Spiraling Blog </p>
-            </div>
           </div>
-</div>
-
-          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-
-    </div>
-</div>
-</body>
-</html>
+          </div>
+    </section>
+    <section id="blog">
+                <div class="container">
+                    <div id="third">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-title">Blog</div>
+                        </div>
+                        </div>
+                        <div class="post">
+                            <div class="row">
+                                <div class="col-lg-5 col-offset-2 blog-title text-center">Title</div>
+                        <div class="blog-date col-lg-2 text-right">Date</div>
+                            </div>
+                            <div class="row">
+                        <div class="col-lg-12 blog-content">Content</div>
+                        </div>
+                </div>
+                </div>
+                </div>
+            </body>
+            </html>
