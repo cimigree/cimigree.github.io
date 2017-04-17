@@ -46,6 +46,70 @@ div#aboutMe.about-modal.fade.modal {
     margin-left: 35px;
     background-color: #2c3e50;
 }
+
+@media(max-width:420px) {
+#first {
+    margin-top: 5em;
+}
+#first .imp-info {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+}
+
+
+@media(max-width:767px) {
+.nav>li>a  {
+padding: 3px 15px;
+font-size: 14px;
+}
+
+    section {
+        padding: 75px 0;
+    }
+    section.first {
+        padding-top: 75px;
+    }
+    header .container {
+        padding-top: 0px;
+    }
+    #newSite {
+        width: 75%;
+        font-size: 1em;
+        margin-bottom: 50px;
+    }
+    header .container {
+        margin-bottom: 0px;
+    }
+    #portfolio h2 {
+        font-size: 2em;
+    }
+}
+
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+
   
 a.socialmedia {
     display: inline-block !important;
@@ -105,6 +169,8 @@ a.socialmedia {
 .about-link {
     color: #374950;
 }
+
+
 
 #first {
     width: 100%;
@@ -180,8 +246,8 @@ padding-bottom: 6em;
 }
 
 .post {
-    margin-top: 5em;
-    border: .5em #66B3CF solid;
+    margin-top: 1em;
+    border: .2em #66B3CF solid;
     background-color: ghostwhite;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
@@ -191,26 +257,38 @@ padding-bottom: 6em;
 
 
 .post .blog-date {
-    font-size: 2.5em;
-        color: #374950;
-            padding: 2em;
+    font-size: 1.5em;
+        color: #2E82C8;
+            padding: 1em 0;
 }
 
 .post .blog-title {
-      font-size: 2.5em;
+      font-size: 1.5em;
       color: #2E82C8;
       font-weight: bolder;
-          padding: 2em;
+          padding: 1em 2em;
 }
 
 .post .blog-content {
 
-    font-size: 1.5em;
+    font-size: 1em;
     color: #374950;
-        padding: 2em;
-
+        padding: 0 2em;
 }
 
+.post .blog-content img {
+    max-width: 25%;
+    height: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.post .blog-content img::after{
+   padding-right: 1em;
+
+
+}
 
 
 
