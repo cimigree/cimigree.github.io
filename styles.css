@@ -295,6 +295,11 @@ padding-bottom: 6em;
 
 }
 
+.afterPhotoAdjust {
+    margin-top: 7em;
+}
+
+
 
 
 @media(min-width:767px) and (max-width:991px) {
