@@ -260,6 +260,10 @@ padding-bottom: 6em;
 
 }
 
+.section-title a {
+    color: ghostwhite
+}
+
 
 .post .blog-date {
     font-size: 1.5em;
@@ -306,5 +310,15 @@ padding-bottom: 6em;
     #about .img-responsive {
         max-width: 33%;
     }
+    .afterPhotoAdjust {
+        margin-top: 0em;
+    }
 
+
+}
+
+@media(max-width:767px) {
+     .afterPhotoAdjust {
+        margin-top: 0em;
+    }
 }

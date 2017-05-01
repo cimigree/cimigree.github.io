@@ -6,7 +6,7 @@ Handlebars.registerHelper('formatDate', function (date, format) {
 
 
 $().ready(function () {
-         $.getJSON("https://public-api.wordpress.com/rest/v1.1/sites/cimigreen.wordpress.com/posts/", function(result) {   
+         $.getJSON("https://public-api.wordpress.com/rest/v1.1/sites/cimigreen.wordpress.com/posts?number=4", function(result) {   
         var source = $("#entry-template").html();
         var template = Handlebars.compile(source);
         var html = template(result);
