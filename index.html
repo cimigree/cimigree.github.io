@@ -4,14 +4,15 @@
 <head>
   <title>Cindy Green, Software Developer</title>
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
 <meta charset="utf-8">
 <meta name = "viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <script src="https://use.fontawesome.com/3e2ffaf7f7.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script>
@@ -225,97 +226,102 @@
     </div> 
 </nav>
 
-    <header id="about">
-        <div class="container">
-            <div id="first">
+<header id="about">
+    <div class="container">
+        <div id="first">
             <div class="row">
-                <div class="col-lg-12 text-left">
-                    <div class="imp-info">Software Engineer && Web Developer && Mobile Developer </div>
+                <div class="col-md-12 text-center">
+                    <div class="imp-info">Full-Stack Web Application Developer</div>
                 </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-7 col-sm-7 col-xs-12 order-xs-last order-lg-first order-md-first order-sm-first">
+                    <h1 class="section-title">Cindy Green</h1>
+                    <span>
+                        <h3>Learn More 
+                            <a href="#aboutMe" data-toggle="modal">
+                                <span class="about-link">About Me</span>
+                            </a> or Check Out My 
+                            <a href="CGreenRes.pdf" target="_blank">
+                                <span class="about-link">Resume</span>
+                            </a>
+                        </h3>
+                    </span>
                 </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="col-md-7 col-xs-12">
-                                <span class="section-title">Cindy Green</span>
-                                <span><h3>Learn More <a href="#aboutMe" data-toggle="modal"><span class="about-link">About Me</span></a>
-                        or Check Out My <a href="CGreenRes.pdf" target="_blank"><span class="about-link">Resume</span></a></h3>
-                                </span>
-                            </div>
-                        <div class="col-md-5">
-                        <img class="img-responsive" id="myphoto" src="CindyAcademyPhotoCropped.jpeg" alt="Pixel Tree">
-                    </div>
+                <div class="col-md-5 col-sm-5 col-xs-12 order-xs-first order-lg-last order-md-last order-sm-last">
+                    <img class="img-fluid" id="myphoto" src="CindyAcademyPhotoCropped.jpeg" alt="Pixel Tree">
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 </header>
 <section id="project">
     <div class="container">
         <div id="second">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                 <h1 class="section-title">Projects</h1>
+                    <h1 class="section-title">Projects</h1>
                 </div>
-                </div>
+            </div>
                 <div class="row">
+                    <div class="col-md-3">
+                        <h4>Applications</h4>
+                        <br>
+                        <div class="project-item">
+                            <a href="http://academypgh.com/replayfx-companion-app/" target="_blank"><img id="replay" class="img-responsive" src="replay.png"></a>
+                            <p>Mobile App for Replay FX <a href="#replaymobile" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
+                        </div>
+                        <div class="project-item">
+                            <a href="http://flexablecare.com/" target="_blank"><img id="flexable" class="img-responsive" src="flexablescreen_edit.png"></a>
+                            <p>Flexable <a href="#flexablecare" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
+                        </div>
+                    </div>
+                <div class="col-md-3">
+                    <h4>Javascript</h4>
+                    <br>
+                    <div class="project-item">
+                        <a href="https://github.com/cimigree/MemoryGame" target="_blank"><img id="memory-game" class="img-responsive" src="memory_gameedit.png"></a>
+                        <p>Memory Game <a href="#memory" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
+                    </div>
+                    <div class="project-item">
+                    <a href="https://github.com/cimigree/image-filter" target="_blank"><img id="imageFilter" class="img-responsive" src="image-filters-edit.png"></a>
+                    <p>Image Filter <a href="#image-filter" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
+                    </div>
+                </div>
                 <div class="col-lg-3">
-              <h4>Applications</h4>
-              </br>
-              <div class="project-item">
-              <a href="http://academypgh.com/replayfx-companion-app/" target="_blank"><img id="replay" class="img-responsive" src="replay.png"></a>
-              <p>Mobile App for Replay FX <a href="#replaymobile" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
-              </div>
-              <div class="project-item">
-              <a href="http://flexablecare.com/" target="_blank"><img id="flexable" class="img-responsive" src="flexablescreen_edit.png"></a>
-              <p>Flexable <a href="#flexablecare" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
-              </div>
+                    <h4>ASP.net C# MVC</h4>
+                    <br>
+                    <div class="project-item">
+                        <a href="https://github.com/AcademyPgh/Y1S2-ReplayFXSchedule.Web" target="_blank"><img id="replay-back" class="img-responsive" src="ReplayBackEndedit.png"></a>
+                        <p>App Back End <a href="#replay-backend" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/cimigree/Trillo" target="_blank"><img id="trillo" class="img-responsive" src="Trillo.png"></a>
+                        <p>Version of Trello <a href="#trillo-mvc" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Ruby</h4>
+                    <br>
+                    <div class="project-item">
+                        <a href="https://github.com/cimigree/ruby_game_o_life" target="_blank"><img id="gamolife" class="img-responsive" src="gameolife_ruby_edit.png"></a>
+                        <p>Conway's Game of Life <a href="#gameolife" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/cimigree/ruby_mad_libs" target="_blank"><img id="mad-libs" class="img-responsive" src="RubyMadLibsEdit.png"></a>
+                        <p>Mad Lib <a href="#madlib" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3">
-              <h4>Javascript</h4>
-              </br>
-              <div class="project-item">
-               <a href="https://github.com/cimigree/MemoryGame" target="_blank"><img id="memory-game" class="img-responsive" src="memory_gameedit.png"></a>
-              <p>Memory Game <a href="#memory" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
-              </div>
-              <div class="project-item">
-              <a href="https://github.com/cimigree/image-filter" target="_blank"><img id="imageFilter" class="img-responsive" src="image-filters-edit.png"></a>
-              <p>Image Filter <a href="#image-filter" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <h4>ASP.net C# MVC</h4>
-              </br>
-              <div class="project-item">
-               <a href="https://github.com/AcademyPgh/Y1S2-ReplayFXSchedule.Web" target="_blank"><img id="replay-back" class="img-responsive" src="ReplayBackEndedit.png"></a>
-              <p>App Back End <a href="#replay-backend" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
-              </div>
-              <div class="project-item">
-              <a href="https://github.com/cimigree/Trillo" target="_blank"><img id="trillo" class="img-responsive" src="Trillo.png"></a>
-              <p>Version of Trello <a href="#trillo-mvc" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <h4>Ruby</h4>
-              </br>
-              <div class="project-item">
-              <a href="https://github.com/cimigree/ruby_game_o_life" target="_blank"><img id="gamolife" class="img-responsive" src="gameolife_ruby_edit.png"></a>
-              <p>Conway's Game of Life <a href="#gameolife" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
-              </div>
-              <div class="project-item">
-               <a href="https://github.com/cimigree/ruby_mad_libs" target="_blank"><img id="mad-libs" class="img-responsive" src="RubyMadLibsEdit.png"></a>
-              <p>Mad Lib <a href="#madlib" data-toggle="modal"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a></p>
-              </div>
-            </div>
-          </div>
-          </div>      
-          </div>
-    </section>
+        </div>      
+    </div>
+</section>
     <section id="blog">
         <div class="container">
             <div id="third">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <div class="section-title"><a href="https://cimigreen.wordpress.com" target="_blank">Blog</div>
+                        <div class="section-title"><a href="https://cimigreen.wordpress.com" target="_blank">Blog</a></div>
                     </div>
                 </div>
                 <div class="post"></div>
@@ -327,11 +333,11 @@
 <script id="entry-template" type="text/x-handlebars-template">
     {{#each posts}}
             <div class="row">    
-            <div class="col-lg-5 text-left blog-title">{{title}}</div>
-            <div class="blog-date col-lg-5 col-offset-2 text-right">{{formatDate date "MM/DD/YYYY"}}</div>
+                <div class="col-lg-5 text-left blog-title">{{title}}</div>
+                 <div class="blog-date col-lg-5 col-offset-2 text-right">{{formatDate date "MM/DD/YYYY"}}</div>
             </div>
             <div class="row">
-            <div class="col-lg-12 blog-content">{{{content}}}</div>
+                <div class="col-lg-12 blog-content">{{{content}}}</div>
             </div>
     {{/each}}
 </script>
