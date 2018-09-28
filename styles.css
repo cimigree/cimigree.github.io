@@ -7,7 +7,7 @@ font-family: 'Merriweather', serif;
 }
 
 .about-modal .modal-content {
-    padding: 100px 0;
+    padding: 1em;
     border: 0;
     border-radius: 0;
     background-clip: border-box;
@@ -20,15 +20,11 @@ font-family: 'Merriweather', serif;
     font-size: medium;
     color: #374950;
     text-align: justify;
-    margin-bottom: 2em;
-    margin-left: .5em;
-    margin-right: .5em;
 }
 .about-modal .modal-content h4 {
     font-size: large;
     color: #00556E;
     text-align: left;
-    margin-left: .5em;
 }
 
 .modal-backdrop {
